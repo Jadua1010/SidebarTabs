@@ -30,6 +30,8 @@ async function addPage() {
   let pageUrl = pageUrlElement.value.replace(/^https?:\/\//, '')
   pageUrl = pageUrl.replace(/\/$/, '')
   let pageIcon = 'chrome://global/skin/icons/link.svg'
+  let iconUrl = ('https://' + pageUrl)
+  
 
   if (!navigator.onLine) {
     createSidebarItem(pageUrl, pageIcon, 'https://' + pageUrl)
@@ -37,10 +39,10 @@ async function addPage() {
   }
 
   const response = await fetch(
-    `https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=${pageUrl}&size=32`
+    `https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=${iconUrl}&size=32`
   )
   if (response.ok) {
-    pageIcon = `https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=${pageUrl}&size=32`
+    pageIcon = `https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=${iconUrl}&size=32`
   }
 
   const tab = await browser.tabs.create({
