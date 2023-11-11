@@ -27,7 +27,8 @@ async function addPage() {
     throw new Error('Could not find the URL element')
   }
 
-  let pageUrl = pageUrlElement
+  let pageUrl = pageUrlElement.value.replace(/^https?:\/\//, '')
+  pageUrl = pageUrl.replace(/\/$/, '')
   let pageIcon = 'chrome://global/skin/icons/link.svg'
 
   if (!navigator.onLine) {
