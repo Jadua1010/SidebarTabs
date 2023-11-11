@@ -37,10 +37,10 @@ async function addPage() {
   }
 
   const response = await fetch(
-    `https://s2.googleusercontent.com/s2/favicons?domain=${pageUrl}&sz=32`
+    `https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=${pageUrl}&size=32`
   )
   if (response.ok) {
-    pageIcon = `https://s2.googleusercontent.com/s2/favicons?domain=${pageUrl}&sz=32`
+    pageIcon = `https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=${pageUrl}&size=32`
   }
 
   const tab = await browser.tabs.create({
