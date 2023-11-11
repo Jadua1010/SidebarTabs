@@ -28,33 +28,33 @@ button {
     height: 32px;
     border-radius: 15px;
     padding-inline: 8px;
-    font-size: 13px;
-    font-weight: 132px;
     background-color: #0060df;
     color: #fff;
     border: none;
     width: 217px;
-    font: 1.2rem "inter", sans-serif;
+    font: 1rem "inter", sans-serif;
+	transition: 0.2s;
+	&:hover {
+		background-color: #5399f5;
+	}
 }
 
 #url {
     height: 32px;
-    border-radius: 2px;
+    border-radius: 15px;
     padding-inline: 8px;
-    font-size: 13px;
-    font-weight: 132px;
     background-color: #fff;
     color: #000;
     border: none;
-    width: 200px;
-    font: 1.2rem "inter", sans-serif;
+    width: 220px;
+    font: 0.9rem "inter", sans-serif;
 }
 
-#instructions{
+#instructions {
     text-align: center;
     padding: 0 11px;
     max-width: 15em;
     margin: 0 auto;
     margin-bottom: 10px;
-    font: 1.2rem "inter", sans-serif;
+    font: 1rem "inter", sans-serif;
 }
