@@ -37,10 +37,10 @@ async function addPage() {
   }
 
   const response = await fetch(
-    `https://icons.duckduckgo.com/ip3/${pageUrl}.ico`
+    `https://s2.googleusercontent.com/s2/favicons?domain=${pageUrl}&sz=32`
   )
   if (response.ok) {
-    pageIcon = `https://icons.duckduckgo.com/ip3/${pageUrl}.ico`
+    pageIcon = `https://s2.googleusercontent.com/s2/favicons?domain=${pageUrl}&sz=32`
   }
 
   const tab = await browser.tabs.create({
