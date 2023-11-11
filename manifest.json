@@ -10,7 +10,8 @@
     "tabs",
     "webRequest",
     "activeTab",
-    "https://s2.googleusercontent.com/"
+    "https://s2.googleusercontent.com/",
+    "https://t3.gstatic.com/"
   ],
   "web_accessible_resources": [
     "icon.svg",
