@@ -1,7 +1,6 @@
 {
-  "$schema": "https://json.schemastore.org/webextension.json",
   "manifest_version": 2,
-  "name": "Pulse Sidebar Expansion",
+  "name": "SidebarTabs",
   "version": "1.0",
   "description": "This extension adds a add page button to the sidebar for further sidebar customization utilizing the sidebar API.",
   "permissions": [
@@ -24,7 +23,7 @@
   },
   "applications": {
     "gecko": {
-      "id": "sidebartabs@browser.fushra.com"
+      "id": "sidebartabs@jaduastudios.com"
     }
   },
   "icons": {
